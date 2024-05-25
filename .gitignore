@@ -1,0 +1,10 @@
+a.out
+.qmake*
+*.user*
+Makefile*
+*build-*
+compile_commands.json
+
+.vscode/
+.cache/
+__pycache__/
