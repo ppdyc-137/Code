@@ -5,6 +5,9 @@ Makefile*
 *build-*
 compile_commands.json
 
+tmp/
+build/
+*build*/
 .vscode/
 .cache/
 __pycache__/
