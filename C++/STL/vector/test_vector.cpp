@@ -129,6 +129,10 @@ int main() {
         v2.resize(5);
         assert(A::count == 5);
 
+        auto& v3 = v2;
+        v2 = v3;
+        assert(A::count == 5);
+
         print(v2);
     }
     assert(A::count == 0);

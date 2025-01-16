@@ -76,6 +76,9 @@ public:
         }
     }
     Vector& operator=(const Vector& that) {
+        if (this == &that)
+            return *this;
+
         if (data_) {
             clear();
             alloc_.deallocate(data_, cap_);
